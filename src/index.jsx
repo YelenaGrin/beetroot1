@@ -29,6 +29,9 @@ const theme = {
 		textAlign: 'center',
 		lineHeight: '3rem',
 		margin: 5
+	},
+	rows: {
+		margin: 10
 	}
 };
 

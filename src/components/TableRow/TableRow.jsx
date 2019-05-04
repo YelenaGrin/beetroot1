@@ -1,11 +1,16 @@
 import React from 'react';
-import './styles.css';
+import withStyles from 'react-jss';
+// import './styles.css';
+
+const styles = ({ rows }) => ({
+	rows 
+});
 
 class TableRow extends React.PureComponent {
 	render = () => {
-		const { children = [] } = this.props;
-		return <tr className="table-row__container">{children}</tr>
+		const { children = [], classes } = this.props;
+		return <tr className={classes.rows}>{children}</tr>
 	}
 }
 
-export default TableRow;
+export default withStyles(styles)(TableRow);
